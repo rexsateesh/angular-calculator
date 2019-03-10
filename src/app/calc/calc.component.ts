@@ -9,6 +9,7 @@ export class CalcComponent implements OnInit {
 
   expression: string = '';
   setNullExp: boolean;
+  specialValues = ['+', '-', '/', '*'];
 
   constructor() { }
 
@@ -16,7 +17,11 @@ export class CalcComponent implements OnInit {
   }
 
   onDigitClick(exp: string) {
-    if(this.setNullExp && (exp !== '-' && exp !== '+' && exp !== '/' && exp !== '*')) { // If value already calculated then set null
+    if (this.setNullExp && exp === '=') {
+      return;
+    }
+
+    if(this.setNullExp && this.specialValues.indexOf(exp) === -1) { // If value already calculated then set null
       this.expression = '';
     }
 
