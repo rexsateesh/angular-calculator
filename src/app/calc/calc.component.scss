@@ -1,0 +1,28 @@
+.calc {
+    width: 400px;
+    margin: 0;
+
+
+    .resultBox {
+        width: 98%;
+        input{
+            font-size: 16px;
+            padding: 1%;
+        }
+    }
+
+    .btnWrap {
+        width: 100%;
+        float: left;
+        .wrap4{
+            width: 100%;
+            float: left;
+
+            button{
+                width: 23%;
+                padding: 1%;
+                margin: 1%;
+            }
+        }
+    }
+}

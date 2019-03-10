@@ -1,0 +1,32 @@
+<div class="calc">
+  <div class="resultBox">
+    <input class="resultBox"  value="{{expression}}" readonly>
+  </div>
+
+  <div class="btnWrap">
+    <div class="wrap4">
+      <button (click)="onDigitClick('7')">7</button>
+      <button (click)="onDigitClick('8')">8</button>
+      <button (click)="onDigitClick('9')">9</button>
+      <button (click)="onDigitClick('/')">/</button>
+    </div>
+    <div class="wrap4">
+      <button (click)="onDigitClick('4')">4</button>
+      <button (click)="onDigitClick('5')">5</button>
+      <button (click)="onDigitClick('6')">6</button>
+      <button (click)="onDigitClick('*')">X</button>
+    </div>
+    <div class="wrap4">
+      <button (click)="onDigitClick('1')">1</button>
+      <button (click)="onDigitClick('2')">2</button>
+      <button (click)="onDigitClick('3')">3</button>
+      <button (click)="onDigitClick('+')">+</button>
+    </div>
+    <div class="wrap4">
+      <button (click)="onDigitClick('0')">0</button>
+      <button (click)="onDigitClick('.')">.</button>
+      <button (click)="onDigitClick('-')">-</button>
+      <button (click)="onDigitClick('=')">=</button>
+    </div>
+  </div>
+</div>
